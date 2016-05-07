@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Koazie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Home Activity -->
+    <string name="textViewSearch">Search</string>
+    <string name="textViewHomeTitle">K O A Z I E</string>
+    <string name="textViewHomeLogo">Find the right nursing home for you.</string>
+
+</resources>
