@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/cover.png",
+        "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/res/drawable-ldpi/cover.png"
+    },
+    {
+        "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/snf.png",
+        "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/res/drawable-ldpi/snf.png"
+    },
+    {
+        "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/search_button.png",
+        "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/res/drawable-ldpi/search_button.png"
+    }
+]

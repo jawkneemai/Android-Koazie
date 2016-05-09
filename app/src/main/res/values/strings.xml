@@ -5,8 +5,13 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Home Activity -->
-    <string name="textViewSearch">Search</string>
-    <string name="textViewHomeTitle">K O A Z I E</string>
-    <string name="textViewHomeLogo">Find the right nursing home for you.</string>
+    <string name="text_view_search">Search</string>
+    <string name="text_view_home_title">K O A Z I E</string>
+    <string name="text_view_home_logo">Find the right nursing home for you.</string>
+
+    <!-- Custom ListView -->
+    <string name="text_view_rating">Rating:</string>
+    <string name="text_view_beds">Beds:</string>
+
 
 </resources>

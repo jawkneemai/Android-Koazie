@@ -6,6 +6,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.places.Places;
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -24,4 +28,6 @@ public class HomeActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fragment_container, f);
         fragmentTransaction.commit();
     }
+
 }
+
