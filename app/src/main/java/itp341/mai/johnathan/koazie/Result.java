@@ -1,41 +1,53 @@
 package itp341.mai.johnathan.koazie;
 
-import java.util.Date;
-
 public class Result {
 
-    private String mTitle;
-    private double mLatitude;
-    private double mLongitude;
+    private String mName, mAddress1, mAddress2, mPhone, mRating, mBeds;
 
     public Result() {
-        mTitle = "";
-        mLatitude = 0.0;
-        mLongitude = 0.0;
+        mName = "";
+        mAddress1 = "";
+        mAddress2 = "";
+        mPhone = "";
+        mRating = "";
+        mBeds = "";
     }
 
-    public Result(String title, double latitude, double longitude) {
-        mTitle = title;
-        mLatitude = latitude;
-        mLongitude = longitude;
+    public Result(String name, String address1, String address2, String phone, String rating, String beds) {
+        mName = name;
+        mAddress1 = address1;
+        mAddress2 = address2;
+        mPhone = phone;
+        mRating = rating;
+        mBeds = beds;
     }
 
-    // Getters (Shouldn't need to reset any values after creation)
-
-    public String getTitle() {
-        return mTitle;
+    public String getName() {
+        return mName;
     }
 
-    public double getLatitude() {
-        return mLatitude;
+    public String getAddress1() {
+        return mAddress1;
     }
 
-    public double getLongitude() {
-        return mLongitude;
+    public String getAddress2() {
+        return mAddress2;
+    }
+
+    public String getPhone() {
+        return mPhone;
+    }
+
+    public String getRating() {
+        return mRating;
+    }
+
+    public String getBeds() {
+        return mBeds;
     }
 
     @Override
     public String toString() {
-        return mTitle;
+        return mName;
     }
 }

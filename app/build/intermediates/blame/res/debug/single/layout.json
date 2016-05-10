@@ -28,12 +28,12 @@
         "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/select_dialog_item_material.xml"
     },
     {
-        "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_select_dialog_material.xml"
-    },
-    {
         "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
@@ -146,6 +146,10 @@
     {
         "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
         "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/res/layout/list_item.xml"
     },
     {
         "merged": "/Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",

@@ -39,7 +39,7 @@
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#9679b8</color>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#9679b8</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
@@ -242,6 +242,7 @@
     <dimen name="place_autocomplete_progress_horizontal_margin">16dp</dimen>
     <dimen name="place_autocomplete_progress_size">24dp</dimen>
     <dimen name="place_autocomplete_separator_start">72dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
     <item name="action_bar_spinner" type="id"/>
@@ -334,9 +335,12 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
-    <string name="textViewHomeLogo">Find the right nursing home for you.</string>
-    <string name="textViewHomeTitle">K O A Z I E</string>
-    <string name="textViewSearch">Search</string>
+    <string name="text_view_beds">Beds:</string>
+    <string name="text_view_home_logo">Find the right nursing home for you.</string>
+    <string name="text_view_home_title">K O A Z I E</string>
+    <string name="text_view_phone">Phone:</string>
+    <string name="text_view_rating">Rating:</string>
+    <string name="text_view_search">Search</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>

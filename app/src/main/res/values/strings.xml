@@ -12,6 +12,7 @@
     <!-- Custom ListView -->
     <string name="text_view_rating">Rating:</string>
     <string name="text_view_beds">Beds:</string>
+    <string name="text_view_phone">Phone:</string>
 
 
 </resources>
