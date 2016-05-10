@@ -1,15 +1,19 @@
 package itp341.mai.johnathan.koazie;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,27 +22,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import com.loopj.android.http.*;
-
-import com.android.volley.Request;
 import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-import com.loopj.android.http.JsonHttpResponseHandler;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Formatter;
 
 
 public class ResultsFragment extends Fragment {
@@ -73,6 +65,7 @@ public class ResultsFragment extends Fragment {
     // Misc
     RequestQueue queue;
     ArrayList<Result> resultsArray;
+    ResultAdapter adapter;
     String jsonRequestURL;
 
     public ResultsFragment() {
@@ -122,21 +115,12 @@ public class ResultsFragment extends Fragment {
 
         mTextLocationTitle.setText("Results in " + resultLocation);
 
-        // SEtting custom adapter
-        /*
-        resultsArray = new ArrayList<Result>();
-        for (int i = 0; i < 5; i++) {
-            Result r = new Result();
-            resultsArray.add(r);
-        }
-
-        ResultAdapter adapter = new ResultAdapter(getActivity(), resultsArray);
-        mListViewResults.setAdapter(adapter);*/
 
         // Sends network call to populate custom adapter
         new RetrieveJsonTask().execute(jsonRequestURL);
 
         return v;
+
     }
 
     // Custom adapter class
@@ -146,10 +130,10 @@ public class ResultsFragment extends Fragment {
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, ViewGroup parent) {
 
             if (convertView == null) {
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_results, parent, false);
             }
 
             TextView facilityIndex = (TextView) convertView.findViewById(R.id.textViewIndex);
@@ -159,6 +143,7 @@ public class ResultsFragment extends Fragment {
             TextView facilityPhone = (TextView) convertView.findViewById(R.id.textViewPhone);
             TextView facilityRating = (TextView) convertView.findViewById(R.id.textViewRating);
             TextView facilityBeds = (TextView) convertView.findViewById(R.id.textViewBeds);
+            Button buttonAddFavorites = (Button) convertView.findViewById(R.id.buttonAddFavorites);
 
             facilityIndex.setText(String.valueOf(position + 1) + ".");
             facilityName.setText(resultsArray.get(position).getName());
@@ -167,6 +152,13 @@ public class ResultsFragment extends Fragment {
             facilityPhone.setText(resultsArray.get(position).getPhone());
             facilityRating.setText(resultsArray.get(position).getRating());
             facilityBeds.setText(resultsArray.get(position).getBeds());
+
+            buttonAddFavorites.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    FavoritesSingleton.get(getActivity().getApplicationContext()).addFavorite(resultsArray.get(position));
+                }
+            });
 
             return convertView;
         }
@@ -235,7 +227,7 @@ public class ResultsFragment extends Fragment {
                 }
 
                 // Setting adapter to listview
-                ResultAdapter adapter = new ResultAdapter(getActivity(), resultsArray);
+                adapter = new ResultAdapter(getActivity(), resultsArray);
                 mListViewResults.setAdapter(adapter);
                 adapter.notifyDataSetChanged();
             }

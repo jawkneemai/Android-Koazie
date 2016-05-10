@@ -33,6 +33,7 @@ public class HomeFragment extends Fragment implements OnConnectionFailedListener
     // Widgets
     ImageView mImageViewBanner;
     Button mButtonSearch;
+    Button mButtonFavorites;
 
     // Google API
     private GoogleApiClient mGoogleApiClient;
@@ -40,6 +41,8 @@ public class HomeFragment extends Fragment implements OnConnectionFailedListener
     // Constants
     private static final String TAG = HomeActivity.class.getSimpleName();
     private static final int PLACE_AUTOCOMPLETE_REQUEST_CODE = 1;
+    private static final int FAVORITES_REQUEST_CODE = 2;
+
 
 
     public HomeFragment() {
@@ -67,6 +70,7 @@ public class HomeFragment extends Fragment implements OnConnectionFailedListener
         // Getting ids
         mImageViewBanner = (ImageView) v.findViewById(R.id.imageBanner);
         mButtonSearch = (Button) v.findViewById(R.id.buttonSearch);
+        mButtonFavorites = (Button) v.findViewById(R.id.buttonFavorites);
 
         // Building google api client
         mGoogleApiClient = new GoogleApiClient
@@ -76,6 +80,7 @@ public class HomeFragment extends Fragment implements OnConnectionFailedListener
                 .enableAutoManage(getActivity(), this)
                 .build();
 
+        // Button Listeners
         mButtonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,6 +97,14 @@ public class HomeFragment extends Fragment implements OnConnectionFailedListener
             }
         });
 
+        mButtonFavorites.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), FavoritesActivity.class);
+                startActivity(i);
+            }
+        });
+
         return v;
     }
 
@@ -104,6 +117,7 @@ public class HomeFragment extends Fragment implements OnConnectionFailedListener
         // ...
     }
 
+    // Only for when the search bar activity resigns and comes back to home activity.
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE) {

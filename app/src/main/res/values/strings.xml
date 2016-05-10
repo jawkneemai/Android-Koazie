@@ -8,11 +8,14 @@
     <string name="text_view_search">Search</string>
     <string name="text_view_home_title">K O A Z I E</string>
     <string name="text_view_home_logo">Find the right nursing home for you.</string>
+    <string name="button_favorites">My Facilities</string>
 
     <!-- Custom ListView -->
     <string name="text_view_rating">Rating:</string>
     <string name="text_view_beds">Beds:</string>
     <string name="text_view_phone">Phone:</string>
+    <string name="button_add_favorites">Add to Favorites</string>
+    <string name="button_remove">Remove</string>
 
 
 </resources>

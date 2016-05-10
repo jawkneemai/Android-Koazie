@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml
@@ -28,7 +28,7 @@ MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/BabyJ/Deskt
 	android:name
 		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:7:5-28:19
+ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:7:5-27:19
 MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:23.3.0] /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.3.0] /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
@@ -162,15 +162,19 @@ ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:17:27-74
 activity#itp341.mai.johnathan.koazie.ResultsActivity
-ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:21:9-22:20
+ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:20:9-62
 	android:name
-		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:21:19-50
+		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:20:19-50
+activity#itp341.mai.johnathan.koazie.FavoritesActivity
+ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:21:9-64
+	android:name
+		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:21:19-52
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:24:9-26:71
+ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:23:9-25:71
 	android:value
-		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:26:13-68
+		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:25:13-68
 	android:name
-		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:25:13-58
+		ADDED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml:24:13-58
 uses-sdk
 INJECTED from /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.3.0] /Users/BabyJ/Desktop/Sk00/ITP341/Koazie/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:21:5-23:78
